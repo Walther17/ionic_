@@ -1,0 +1,90 @@
+<app-header titulo="Input page"></app-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Text input</ion-label>
+      <ion-input placeholder="Enter text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Number input</ion-label>
+      <ion-input type="number" placeholder="000"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password input</ion-label>
+      <ion-input type="password" value="password"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Email input</ion-label>
+      <ion-input type="email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Telephone input</ion-label>
+      <ion-input type="tel" placeholder="888-888-8888"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-item>
+    <ion-label position="floating">Default input</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  
+  <ion-item fill="solid">
+    <ion-label position="floating">Solid input</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+  
+  <ion-item fill="outline">
+    <ion-label position="floating">Outline input</ion-label>
+    <ion-input placeholder="Enter text"></ion-input>
+  </ion-item>
+
+
+  <ion-label> </ion-label>
+  <ion-label> </ion-label>
+  <ion-label> </ion-label>
+  <ion-label> </ion-label>
+
+  <ion-list>
+    
+    <ion-list-header>
+      <ion-label> Nombre: {{nombre || 'No hay nombre'}} </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+
+
+    <ion-list>
+
+
+      <ion-list-header>
+        <ion-label>Formulario template: Valido {{ formulario.valid}} </ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" name="email" [(ngModel)]="usuario.email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="usuario.password" required></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" type="submit" [disabled]="formulario.invalid">Send</ion-button>
+    </ion-list>
+  </form>
+
+</ion-content>

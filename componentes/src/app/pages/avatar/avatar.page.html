@@ -1,0 +1,45 @@
+<ion-header no-border>
+  <ion-toolbar>
+       <!-- no-border quita el borde o sombra del header  -->
+
+  <ion-buttons slot="start">
+    <ion-back-button  defaultHref="/"></ion-back-button>
+  </ion-buttons>
+
+   <!-- defaultHref muestra el back cuando no hay historia de navegación-->
+    <ion-title text-capitalize>Avatar</ion-title>
+
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/cristiano-ronaldo.jpg">
+      </ion-avatar>
+    </ion-buttons>
+
+
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-chip color="primary" *ngFor="let i of [1,1,1,1,1,1]">
+    <ion-avatar>
+      <img src="/assets/cristiano-ronaldo.jpg" >
+    </ion-avatar>
+    <ion-label>Cristiano Ronaldo</ion-label>
+
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor="let c of [1,1,1,1,1,1]">
+      <ion-avatar slot="start">
+        <img src="/assets/cristiano-ronaldo.jpg" >
+      </ion-avatar>
+
+      <ion-label>Cristiano Ronaldo</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

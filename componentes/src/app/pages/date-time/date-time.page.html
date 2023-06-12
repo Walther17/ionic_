@@ -1,0 +1,69 @@
+<app-header titulo="Date time"></app-header>
+
+<ion-content>
+
+
+  <ion-list>
+    
+    <ion-list-header>
+      <ion-label>Datos de nacimiento</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+     
+      <ion-label>Fecha de Nacimiento</ion-label>
+    
+      <ion-datetime locale="en-GB" hourCycle="h12" [isDateEnabled]="isWeekday"></ion-datetime>
+      
+    </ion-item>
+
+    <ion-item>
+     
+      <ion-label>Fecha de Nacimiento</ion-label>
+    
+      <ion-datetime 
+      [showDefaultTitle]="true" 
+      placeholder="Nacimiento" 
+      display-format="HH-MM-SS"
+      value="{{fechaNaci | date: 'HH-mm-ss' }}" 
+      cancelText="Cancelar!!" 
+      [(ngModel)]="fechaNaci"
+      (ionChange)="cambioFecha( $event )" ></ion-datetime>
+      
+    </ion-item>
+
+
+
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Min and Max</ion-label>
+      <ion-datetime
+      placeholader="yyyy-mm-dd"
+      display-format="YYYY MMMM DD"
+      min="2015-02-03"
+      max="2025-02-03">
+
+      </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Min and Max</ion-label>
+      <ion-datetime
+      placeholader="yyyy"
+      display-format="YYYY"
+      min="2015"
+      max="2025"
+      >
+
+      </ion-datetime>
+    </ion-item>
+
+    
+
+  </ion-list>
+
+</ion-content>

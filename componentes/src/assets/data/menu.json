@@ -1,0 +1,82 @@
+[
+    {
+      "icon": "american-football",
+      "name": "Action Sheet",
+      "redirecTO": "/action-sheet"
+    },
+    {
+      "icon": "logo-apple-appstore",
+      "name": "Alert",
+      "redirecTO": "/alert"
+    },
+    {
+      "icon": "beaker",
+      "name": "Avatar",
+      "redirecTO": "/avatar"
+    },
+    {
+      "icon": "radio-button-on",
+      "name": "Botones y router",
+      "redirecTO": "/botones"
+    },
+    {
+      "icon": "card",
+      "name": "Cards",
+      "redirecTO": "/card"
+    },
+    {
+      "icon": "checkmark-circle",
+      "name": "CheckBox",
+      "redirecTO": "/check"
+    },
+    {
+      "icon": "calendar",
+      "name": "Date time",
+      "redirecTO": "/date-time"
+    },
+
+    {
+      "icon": "car",
+      "name": "Fab",
+      "redirecTO": "/fab"
+    },
+    
+    {
+      "icon": "grid",
+      "name": "Grid",
+      "redirecTO": "/grid"
+    },
+
+    {
+      "icon": "infinite",
+      "name": "Infinite Scroll",
+      "redirecTO": "/infinite-scroll"
+    },
+
+    {
+      "icon": "hammer",
+      "name": "Input",
+      "redirecTO": "/input"
+    },
+    {
+      "icon": "list",
+      "name": "Lista",
+      "redirecTO": "/lista"
+    },
+
+    {
+      "icon": "reorder-four",
+      "name": "List reorder",
+      "redirecTO": "/list-reorder"
+    },
+
+
+
+    {
+      "icon": "refresh-circle",
+      "name": "Loading",
+      "redirecTO": "/loading"
+    }
+
+
+  ]

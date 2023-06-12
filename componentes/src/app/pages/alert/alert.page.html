@@ -1,0 +1,14 @@
+<app-header [titulo]="titulo  || 'Alert page'"></app-header>
+
+<!--
+    <app-header [titulo]="titulo"></app-header>
+    [titulo]="titulo" el titulo entre corchetes indica que es una variable
+-->
+
+<ion-content>
+    <ion-button expand="full" (click)="presentAlert()">Click Me</ion-button>
+    <ion-button color="success" expand="full" (click)="presentInput()">Click Me</ion-button>
+
+
+    
+</ion-content>
